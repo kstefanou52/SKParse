@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SKHTTPClient",
+        "repositoryURL": "https://github.com/kstefanou52/SKHTTPClient.git",
+        "state": {
+          "branch": "master",
+          "revision": "523e280b3516d704fbedbb07fa2386596f88d347",
+          "version": null
+        }
+      },
+      {
+        "package": "SKKeychain",
+        "repositoryURL": "https://github.com/kstefanou52/SKKeychain.git",
+        "state": {
+          "branch": "master",
+          "revision": "51ba4e6d741d80b879e6e0e779a7b759b239c916",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
