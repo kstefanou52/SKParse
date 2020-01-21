@@ -1,6 +1,6 @@
 //
 //  Parse.swift
-//  wallster
+//  SKParse
 //
 //  Created by kostis stefanou on 1/6/20.
 //  Copyright © 2020 silonk. All rights reserved.

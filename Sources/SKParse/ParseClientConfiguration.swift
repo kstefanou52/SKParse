@@ -1,6 +1,6 @@
 //
 //  ParseClientConfiguration.swift
-//  wallster
+//  SKParse
 //
 //  Created by kostis stefanou on 1/6/20.
 //  Copyright © 2020 silonk. All rights reserved.
@@ -14,7 +14,7 @@ import UIKit
 import WatchKit
 #endif
 
-protocol ParseMutableClientConfiguration: NSObjectProtocol {
+public protocol ParseMutableClientConfiguration: NSObjectProtocol {
     
     // MARK: - Connecting to Parse
     
@@ -48,17 +48,17 @@ protocol ParseMutableClientConfiguration: NSObjectProtocol {
 
 public final class ParseClientConfiguration: NSObject, ParseMutableClientConfiguration {
     
-    var applicationId: String?
+    public var applicationId: String?
     
-    var clientKey: String?
+    public var clientKey: String?
     
-    var server: String?
+    public var server: String?
     
-    var urlSessionConfiguration: URLSessionConfiguration?
+    public var urlSessionConfiguration: URLSessionConfiguration?
     
-    var networkRetryAttempts: Int
+    public var networkRetryAttempts: Int
     
-    init(completion: (ParseMutableClientConfiguration) -> (Void)) {
+    public init(completion: (ParseMutableClientConfiguration) -> (Void)) {
         self.networkRetryAttempts = ParseConstants.PFCommandRunningDefaultMaxAttemptsCount
         super.init()
         completion(self)

@@ -3,7 +3,10 @@
 A description of this package.
 
 ## Usage
+Wherever you want to use it remember to `import SKParse`
+
 ### Initialize (suggested inAppDelegate):
+
 ```
 let configuration = ParseClientConfiguration {
     $0.applicationId = "Your-Application-id“

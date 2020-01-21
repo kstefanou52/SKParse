@@ -1,6 +1,6 @@
 //
 //  Extensions+Foundation.swift
-//  wallster
+//  SKParse
 //
 //  Created by kostis stefanou on 1/8/20.
 //  Copyright © 2020 silonk. All rights reserved.
