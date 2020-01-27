@@ -60,7 +60,7 @@ extension ParseClient {
     }
     
     public func cloudFunction<T: Codable>(withName name: String, andParameters parameters: [String: Any], completion: @escaping(T?, HTTPClientError<APIParseError>?) -> Void) {
-        let url = serverURL.appendingPathComponent(ParseAPIRouter.cloudFunction.rawValue)
+        let url = serverURL.appendingPathComponent(ParseAPIRouter.cloudFunction.rawValue).appendingPathComponent(name)
         let request = createURLRequest(endPoint: url, method: .POST, body: parameters)
         
         performURLDataTask(with: request, completion: completion)
